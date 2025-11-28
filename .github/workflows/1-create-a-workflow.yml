@@ -69,3 +69,9 @@ jobs:
           from_step: 1
           to_step: 2
           branch_name: welcome-workflow
+name: Post welcome comment
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  pull-requests: write
