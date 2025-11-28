@@ -4,3 +4,10 @@ on:
     types: [opened]
 permissions:
   pull-requests: write
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder step
+        run: echo "Workflow initialized"
